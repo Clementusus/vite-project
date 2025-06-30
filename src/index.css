@@ -1,0 +1,149 @@
+:root {
+  --bg: #ffe0ec;
+  --bg-gradient: linear-gradient(135deg, #ffe0ec 0%, #fff8f0 100%);
+  --accent: #f7b267;
+  --text: #4b3f72;
+  --sidebar: #fff8f0;
+}
+
+/* Existing themes */
+body[data-theme="Domyślny"] {
+  --bg: #ffe0ec;
+  --bg-gradient: linear-gradient(135deg, #ffe0ec 0%, #fff8f0 100%);
+  --accent: #f7b267;
+  --text: #4b3f72;
+  --sidebar: #fff8f0;
+}
+body[data-theme="Niebieski"] {
+  --bg: #a7c7e7;
+  --bg-gradient: linear-gradient(135deg, #a7c7e7 0%, #e0ecff 100%);
+  --accent: #4b3f72;
+  --text: #22223b;
+  --sidebar: #e0ecff;
+}
+body[data-theme="Ciemny"] {
+  --bg: #232946;
+  --bg-gradient: linear-gradient(135deg, #232946 0%, #121629 100%);
+  --accent: #eebbc3;
+  --text: #fffffe;
+  --sidebar: #121629;
+}
+
+/* New themes */
+body[data-theme="Miętowy"] {
+  --bg: #e0fff7;
+  --bg-gradient: linear-gradient(135deg, #e0fff7 0%, #b8fff9 100%);
+  --accent: #38b6ff;
+  --text: #1b4965;
+  --sidebar: #b8fff9;
+}
+body[data-theme="Zielony"] {
+  --bg: #eafbea;
+  --bg-gradient: linear-gradient(135deg, #eafbea 0%, #d8f3dc 100%);
+  --accent: #38b000;
+  --text: #004b23;
+  --sidebar: #d8f3dc;
+}
+body[data-theme="Pomarańczowy"] {
+  --bg: #fff4e6;
+  --bg-gradient: linear-gradient(135deg, #fff4e6 0%, #ffe5b4 100%);
+  --accent: #ff8800;
+  --text: #7c4700;
+  --sidebar: #ffe5b4;
+}
+body[data-theme="Fioletowy"] {
+  --bg: #f3e8ff;
+  --bg-gradient: linear-gradient(135deg, #f3e8ff 0%, #e0c3fc 100%);
+  --accent: #a259f7;
+  --text: #3d246c;
+  --sidebar: #e0c3fc;
+}
+body[data-theme="Różowy"] {
+  --bg: #ffe0f7;
+  --bg-gradient: linear-gradient(135deg, #ffe0f7 0%, #ffd6ec 100%);
+  --accent: #ff5eae;
+  --text: #a4133c;
+  --sidebar: #ffd6ec;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg-gradient, var(--bg));
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Add this to give all headings and strong text a subtle shadow */
+h1, h2, h3, h4, h5, h6, .sidebar-title, strong, b {
+  text-shadow: 0 2px 8px rgba(75,63,114,0.10), 0 1px 1px rgba(0,0,0,0.06);
+}
+
+/* Optional: add shadow to all text for a softer look */
+body, p, span, div, li {
+  text-shadow: 0 1px 4px rgba(75,63,114,0.06);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
